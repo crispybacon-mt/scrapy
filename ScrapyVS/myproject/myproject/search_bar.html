@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Patents</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px #ccc;
+            width: 100%;
+            max-width: 600px;
+            height: 60px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .search-box input[type="text"] {
+            flex-grow: 1;
+            border: none;
+            font-size: 16px;
+            color: #555;
+            background-color: transparent;
+            margin-left: 10px;
+            box-sizing: border-box;
+        }
+
+        .search-box input[type="submit"] {
+            padding: 12px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #6ab8f7;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            box-sizing: border-box;
+        }
+
+        .search-box input[type="submit"]:hover {
+            background-color: #1c87c9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="C:\Users\natei\OneDrive\Desktop\ScrapyVS\pics\OIP.jpg" alt="Legal Logo">
+        </div>
+        <h1>Search Patents</h1>
+        <form action="/search" method="get" class="search-box">
+            <label for="query" class="visually-hidden">Search for patents</label>
+            <input type="text" name="query" id="query" placeholder="Search for patents...">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</body>
+
+</html>
